@@ -1,0 +1,616 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1531951604716334025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1531951604716334024}
+  - component: {fileID: 1531951604716334031}
+  m_Layer: 0
+  m_Name: RightHandDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1531951604716334024
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531951604716334025}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1531951604768233242}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1531951604716334031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531951604716334025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59269f716762dd2488abeff6acc3ce84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.05
+  skeleton: {fileID: 0}
+  gestures:
+  - name: CubeGrab
+    fingerDatas:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.020069307, y: -0.011554087, z: -0.010496508}
+    - {x: -0.035769787, y: -0.01875096, z: -0.028366849}
+    - {x: -0.05771715, y: -0.035328172, z: -0.045704685}
+    - {x: -0.08649284, y: -0.05291606, z: -0.043560296}
+    - {x: -0.09599626, y: -0.007316437, z: -0.023550685}
+    - {x: -0.1264732, y: -0.028702253, z: -0.016319843}
+    - {x: -0.12901497, y: -0.052803375, z: -0.014491406}
+    - {x: -0.095646605, y: -0.0025431481, z: -0.0017258949}
+    - {x: -0.1323875, y: -0.024445571, z: 0.0018961534}
+    - {x: -0.13915014, y: -0.051151916, z: 0.0020355398}
+    - {x: -0.088693805, y: -0.006529251, z: 0.017465258}
+    - {x: -0.123039804, y: -0.024962364, z: 0.018592287}
+    - {x: -0.13141465, y: -0.049992587, z: 0.015510821}
+    - {x: -0.03407358, y: -0.00941979, z: 0.022998577}
+    - {x: -0.07789585, y: -0.013691184, z: 0.03505408}
+    - {x: -0.10351915, y: -0.03055453, z: 0.033375334}
+    - {x: -0.11267196, y: -0.048402674, z: 0.030177891}
+    - {x: -0.10437023, y: -0.065391116, z: -0.032115582}
+    - {x: -0.123022646, y: -0.074351676, z: -0.013482066}
+    - {x: -0.12973456, y: -0.07406909, z: -0.0012481054}
+    - {x: -0.12791987, y: -0.07341524, z: 0.009716129}
+    - {x: -0.12287274, y: -0.066979565, z: 0.024435844}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+          m_MethodName: DetectGrabbing
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: true
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: PaperGrab
+    fingerDatas:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.020069309, y: -0.011554076, z: -0.010496518}
+    - {x: -0.036884747, y: -0.021213092, z: -0.026039792}
+    - {x: -0.05767454, y: -0.0427768, z: -0.038684215}
+    - {x: -0.08472506, y: -0.06279041, z: -0.035569865}
+    - {x: -0.095996276, y: -0.007316426, z: -0.023550717}
+    - {x: -0.12233396, y: -0.033343177, z: -0.01534011}
+    - {x: -0.10634894, y: -0.051394626, z: -0.018388422}
+    - {x: -0.09564658, y: -0.0025432128, z: -0.0017259123}
+    - {x: -0.12270491, y: -0.03572461, z: 0.0013663954}
+    - {x: -0.10075517, y: -0.051988617, z: -0.002193329}
+    - {x: -0.0886938, y: -0.0065292907, z: 0.01746525}
+    - {x: -0.11063491, y: -0.03875017, z: 0.018513534}
+    - {x: -0.09059659, y: -0.05449835, z: 0.01098989}
+    - {x: -0.034073584, y: -0.00941979, z: 0.022998571}
+    - {x: -0.077895865, y: -0.013691144, z: 0.035054043}
+    - {x: -0.09252406, y: -0.040573027, z: 0.032384988}
+    - {x: -0.079507545, y: -0.052782472, z: 0.022686897}
+    - {x: -0.10302202, y: -0.078804955, z: -0.031701256}
+    - {x: -0.085390195, y: -0.045743197, z: -0.023870291}
+    - {x: -0.07865182, y: -0.041976538, z: -0.008179776}
+    - {x: -0.0693596, y: -0.04432914, z: 0.0046660057}
+    - {x: -0.062047143, y: -0.04290251, z: 0.013762037}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+          m_MethodName: DetectGrabbing
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: true
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: CupboardGrab
+    fingerDatas:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.020069316, y: -0.011554095, z: -0.010496524}
+    - {x: -0.034845196, y: -0.016800867, z: -0.02977846}
+    - {x: -0.06077615, y: -0.021041946, z: -0.048927564}
+    - {x: -0.08804791, y: -0.020153483, z: -0.068863355}
+    - {x: -0.095996246, y: -0.0073164403, z: -0.023550667}
+    - {x: -0.10995984, y: -0.042497586, z: -0.02114511}
+    - {x: -0.08569903, y: -0.043939687, z: -0.021175189}
+    - {x: -0.09564659, y: -0.0025431565, z: -0.0017259282}
+    - {x: -0.101203635, y: -0.04510857, z: -0.001542242}
+    - {x: -0.073967345, y: -0.047600772, z: -0.0048518465}
+    - {x: -0.088693805, y: -0.0065293023, z: 0.017465252}
+    - {x: -0.08784784, y: -0.045339033, z: 0.013752196}
+    - {x: -0.0620445, y: -0.045565452, z: 0.007405254}
+    - {x: -0.034073573, y: -0.009419841, z: 0.022998575}
+    - {x: -0.077895865, y: -0.013691184, z: 0.0350541}
+    - {x: -0.07721139, y: -0.043104045, z: 0.026213247}
+    - {x: -0.05731804, y: -0.04200591, z: 0.022263426}
+    - {x: -0.105936036, y: -0.020844914, z: -0.08576738}
+    - {x: -0.07001408, y: -0.027977847, z: -0.02185381}
+    - {x: -0.06010356, y: -0.027294546, z: -0.009333824}
+    - {x: -0.05019064, y: -0.02450622, z: 0.0041789776}
+    - {x: -0.044984482, y: -0.023920195, z: 0.0205544}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+          m_MethodName: DetectGrabbing
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: true
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: CupboardGrab2
+    fingerDatas:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: -0.020069322, y: -0.011554088, z: -0.010496518}
+    - {x: -0.03670811, y: -0.02081249, z: -0.026467824}
+    - {x: -0.06300428, y: -0.0329794, z: -0.04121794}
+    - {x: -0.094621755, y: -0.04487573, z: -0.04033004}
+    - {x: -0.09599622, y: -0.0073164683, z: -0.023550704}
+    - {x: -0.12090998, y: -0.035820223, z: -0.021243654}
+    - {x: -0.0996742, y: -0.047637735, z: -0.021475505}
+    - {x: -0.09564658, y: -0.0025431556, z: -0.0017258924}
+    - {x: -0.10497929, y: -0.04442693, z: -0.00055294816}
+    - {x: -0.07803772, y: -0.04757978, z: -0.005368544}
+    - {x: -0.088693805, y: -0.0065293107, z: 0.01746521}
+    - {x: -0.08882721, y: -0.045368534, z: 0.013973215}
+    - {x: -0.06349731, y: -0.048260726, z: 0.006478189}
+    - {x: -0.03407357, y: -0.009419845, z: 0.02299856}
+    - {x: -0.077895865, y: -0.01369117, z: 0.03505406}
+    - {x: -0.07563209, y: -0.042949516, z: 0.025967235}
+    - {x: -0.05653997, y: -0.044609047, z: 0.019237556}
+    - {x: -0.11670606, y: -0.055596173, z: -0.038442317}
+    - {x: -0.0799624, y: -0.037064735, z: -0.02243234}
+    - {x: -0.06138209, y: -0.029734086, z: -0.010731101}
+    - {x: -0.048012834, y: -0.0300754, z: 0.0015854946}
+    - {x: -0.0408266, y: -0.030226607, z: 0.013911509}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+          m_MethodName: DetectGrabbing
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: true
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: release
+    fingerDatas:
+    - {x: 0.0000000013882214, y: 0.000000001156782, z: -0.0000000034499774}
+    - {x: 0.0000000013882214, y: 0.000000001156782, z: -0.0000000034499774}
+    - {x: -0.0200693, y: -0.011554071, z: -0.010496497}
+    - {x: -0.03409458, y: -0.015261845, z: -0.030675557}
+    - {x: -0.05624747, y: -0.025049053, z: -0.052367713}
+    - {x: -0.08384292, y: -0.03378148, z: -0.069809325}
+    - {x: -0.09599624, y: -0.007316453, z: -0.02355067}
+    - {x: -0.13379408, y: -0.0051169735, z: -0.025778877}
+    - {x: -0.15807216, y: -0.0053994656, z: -0.026857626}
+    - {x: -0.09564664, y: -0.002543173, z: -0.0017259215}
+    - {x: -0.13844572, y: -0.004350867, z: 0.0010485922}
+    - {x: -0.16555734, y: -0.008872008, z: 0.0029184541}
+    - {x: -0.08869381, y: -0.006529339, z: 0.017465245}
+    - {x: -0.12709263, y: -0.0036812988, z: 0.023639169}
+    - {x: -0.15319914, y: -0.0072988034, z: 0.027031658}
+    - {x: -0.034073554, y: -0.009419833, z: 0.022998588}
+    - {x: -0.07789588, y: -0.013691165, z: 0.035054054}
+    - {x: -0.10743234, y: -0.012523096, z: 0.043419186}
+    - {x: -0.12655199, y: -0.016092146, z: 0.049271785}
+    - {x: -0.09990108, y: -0.0401807, z: -0.087342076}
+    - {x: -0.18041636, y: -0.004084758, z: -0.026339892}
+    - {x: -0.19040091, y: -0.0101802945, z: 0.005310752}
+    - {x: -0.17738338, y: -0.009511574, z: 0.029185437}
+    - {x: -0.14794037, y: -0.017209558, z: 0.05411121}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+          m_MethodName: DetectGrabbing
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: false
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+          m_MethodName: isReleasing
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: release2
+    fingerDatas:
+    - {x: -7.441128e-10, y: -5.728944e-10, z: 0.0000000019191064}
+    - {x: -7.441128e-10, y: -5.728944e-10, z: 0.0000000019191064}
+    - {x: -0.020069297, y: -0.011554121, z: -0.010496541}
+    - {x: -0.033807866, y: -0.014682778, z: -0.030968744}
+    - {x: -0.054835375, y: -0.025344703, z: -0.0533575}
+    - {x: -0.08265616, y: -0.036643583, z: -0.06885956}
+    - {x: -0.09599624, y: -0.007316439, z: -0.023550682}
+    - {x: -0.13251819, y: -0.016349332, z: -0.02835006}
+    - {x: -0.15365365, y: -0.02810699, z: -0.030740824}
+    - {x: -0.095646605, y: -0.002543155, z: -0.0017259149}
+    - {x: -0.13729303, y: -0.012947894, z: -0.0019323984}
+    - {x: -0.15983525, y: -0.028782915, z: -0.0022159806}
+    - {x: -0.088693775, y: -0.0065293275, z: 0.017465252}
+    - {x: -0.12729608, y: -0.0097043775, z: 0.021990437}
+    - {x: -0.14927197, y: -0.024639282, z: 0.022383831}
+    - {x: -0.03407357, y: -0.0094198575, z: 0.022998573}
+    - {x: -0.07789586, y: -0.013691172, z: 0.03505407}
+    - {x: -0.10698353, y: -0.017236343, z: 0.044277977}
+    - {x: -0.123798385, y: -0.027821522, z: 0.04849311}
+    - {x: -0.09823851, y: -0.04442029, z: -0.08626422}
+    - {x: -0.17296001, y: -0.03942042, z: -0.031467754}
+    - {x: -0.1815571, y: -0.041138425, z: -0.0018432508}
+    - {x: -0.17004831, y: -0.037384227, z: 0.02181668}
+    - {x: -0.14315599, y: -0.03778868, z: 0.05133397}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+          m_MethodName: DetectGrabbing
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: false
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+          m_MethodName: isReleasing
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  debugMode: 1
+  notRecognize:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+        m_MethodName: DetectGrabbing
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: false
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &1531951604768233243
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1531951604768233242}
+  m_Layer: 0
+  m_Name: Gesture Dectector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1531951604768233242
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531951604768233243}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.0803535, y: -0.15982485, z: 2.5466974}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1531951604813619850}
+  - {fileID: 1531951604716334024}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1531951604813619851
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1531951604813619850}
+  - component: {fileID: 1531951604813619849}
+  m_Layer: 0
+  m_Name: LeftHandDetector
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1531951604813619850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531951604813619851}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1531951604768233242}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1531951604813619849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1531951604813619851}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59269f716762dd2488abeff6acc3ce84, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  threshold: 0.05
+  skeleton: {fileID: 0}
+  gestures:
+  - name: CubeGrab
+    fingerDatas:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0.020069307, y: 0.011554142, z: 0.010496515}
+    - {x: 0.036477175, y: 0.020295614, z: 0.026989488}
+    - {x: 0.052371584, y: 0.045686085, z: 0.039629854}
+    - {x: 0.075839736, y: 0.069640554, z: 0.035457924}
+    - {x: 0.09599625, y: 0.0073164986, z: 0.023550678}
+    - {x: 0.12609991, y: 0.029683955, z: 0.01789868}
+    - {x: 0.1203953, y: 0.05330688, z: 0.017614996}
+    - {x: 0.09564664, y: 0.0025431165, z: 0.0017258947}
+    - {x: 0.13024426, y: 0.027815955, z: -0.0009230459}
+    - {x: 0.12703387, y: 0.055158604, z: 0.0001030939}
+    - {x: 0.088693805, y: 0.0065293293, z: -0.017465277}
+    - {x: 0.121126145, y: 0.027788881, z: -0.021572618}
+    - {x: 0.12428953, y: 0.05394737, z: -0.018126478}
+    - {x: 0.034073565, y: 0.009419795, z: -0.022998592}
+    - {x: 0.07789586, y: 0.013691191, z: -0.035054095}
+    - {x: 0.10033137, y: 0.033655744, z: -0.04152006}
+    - {x: 0.10511578, y: 0.05324507, z: -0.03908688}
+    - {x: 0.0915325, y: 0.087134875, z: 0.02811669}
+    - {x: 0.1073765, y: 0.071521364, z: 0.017671345}
+    - {x: 0.11090823, y: 0.0739256, z: 0.003624017}
+    - {x: 0.114113644, y: 0.0748437, z: -0.010763944}
+    - {x: 0.10419416, y: 0.073019706, z: -0.029586973}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+          m_MethodName: DetectGrabbing
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: true
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: PaperGrab
+    fingerDatas:
+    - {x: 7.62938e-10, y: 0.0000000018470675, z: -0.0000000075322415}
+    - {x: 7.62938e-10, y: 0.0000000018470675, z: -0.0000000075322415}
+    - {x: 0.020069325, y: 0.011554057, z: 0.010496523}
+    - {x: 0.037139997, y: 0.021800801, z: 0.025370855}
+    - {x: 0.057898466, y: 0.044066872, z: 0.03679012}
+    - {x: 0.08468244, y: 0.06428179, z: 0.032796275}
+    - {x: 0.09599627, y: 0.007316418, z: 0.023550684}
+    - {x: 0.11012967, y: 0.042306393, z: 0.019751618}
+    - {x: 0.086167246, y: 0.045856763, z: 0.021717224}
+    - {x: 0.09564661, y: 0.0025431532, z: 0.0017259109}
+    - {x: 0.10792528, y: 0.043675143, z: 0.002083455}
+    - {x: 0.08072582, y: 0.047921475, z: 0.0031497814}
+    - {x: 0.0886938, y: 0.006529325, z: -0.017465258}
+    - {x: 0.0958792, y: 0.044738088, z: -0.01443906}
+    - {x: 0.07032573, y: 0.04998029, z: -0.009370957}
+    - {x: 0.034073547, y: 0.009419856, z: -0.022998575}
+    - {x: 0.077895865, y: 0.013691202, z: -0.035054076}
+    - {x: 0.08106444, y: 0.043122575, z: -0.026838293}
+    - {x: 0.06240382, y: 0.04812895, z: -0.020571748}
+    - {x: 0.09722009, y: 0.070909806, z: 0.012669522}
+    - {x: 0.075419776, y: 0.026352977, z: 0.024031375}
+    - {x: 0.06674361, y: 0.027483514, z: 0.0065297424}
+    - {x: 0.05544, y: 0.030862749, z: -0.006659938}
+    - {x: 0.048274156, y: 0.031583052, z: -0.017619075}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+          m_MethodName: DetectGrabbing
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: true
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Release
+    fingerDatas:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0.020069309, y: 0.011554063, z: 0.010496526}
+    - {x: 0.035223562, y: 0.017590865, z: 0.02924632}
+    - {x: 0.048985206, y: 0.041832425, z: 0.045981143}
+    - {x: 0.07051247, y: 0.06656834, z: 0.054147262}
+    - {x: 0.09599622, y: 0.007316443, z: 0.023550684}
+    - {x: 0.1303074, y: 0.022996815, z: 0.027468458}
+    - {x: 0.15042478, y: 0.036503293, z: 0.029349206}
+    - {x: 0.09564662, y: 0.0025432056, z: 0.0017259227}
+    - {x: 0.13500702, y: 0.019184532, z: 0.0057943533}
+    - {x: 0.15691675, y: 0.03572305, z: 0.008122739}
+    - {x: 0.0886938, y: 0.006529354, z: -0.017465267}
+    - {x: 0.12645724, y: 0.016223397, z: -0.016662696}
+    - {x: 0.14730245, y: 0.03255243, z: -0.014430618}
+    - {x: 0.034073595, y: 0.009419797, z: -0.022998583}
+    - {x: 0.07789586, y: 0.01369119, z: -0.03505409}
+    - {x: 0.10726991, y: 0.02128201, z: -0.039879788}
+    - {x: 0.124961, y: 0.030781465, z: -0.042935558}
+    - {x: 0.08200722, y: 0.08554687, z: 0.06481948}
+    - {x: 0.16966707, y: 0.047943834, z: 0.02967531}
+    - {x: 0.17656808, y: 0.05105968, z: 0.009924699}
+    - {x: 0.1650519, y: 0.04888706, z: -0.010888124}
+    - {x: 0.14433557, y: 0.041088525, z: -0.04365682}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+          m_MethodName: DetectGrabbing
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: false
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+          m_MethodName: isReleasing
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  - name: Release2
+    fingerDatas:
+    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: 0, z: 0}
+    - {x: 0.0200693, y: 0.011554108, z: 0.010496512}
+    - {x: 0.034689523, y: 0.016478697, z: 0.029981062}
+    - {x: 0.047046743, y: 0.040571295, z: 0.047979306}
+    - {x: 0.069298826, y: 0.0659663, z: 0.049362328}
+    - {x: 0.095996276, y: 0.0073164124, z: 0.023550695}
+    - {x: 0.13319598, y: 0.013090633, z: 0.028167734}
+    - {x: 0.1564277, y: 0.019768985, z: 0.030688772}
+    - {x: 0.095646605, y: 0.0025431397, z: 0.0017258999}
+    - {x: 0.13762504, y: 0.010472964, z: 0.005927719}
+    - {x: 0.16343705, y: 0.019762011, z: 0.008464662}
+    - {x: 0.088693775, y: 0.006529338, z: -0.017465267}
+    - {x: 0.1273057, y: 0.011673471, z: -0.01563302}
+    - {x: 0.15219755, y: 0.020747216, z: -0.013582033}
+    - {x: 0.034073547, y: 0.009419787, z: -0.022998575}
+    - {x: 0.07789586, y: 0.013691172, z: -0.035054076}
+    - {x: 0.1077655, y: 0.018142257, z: -0.040687464}
+    - {x: 0.12646277, y: 0.024997484, z: -0.044683747}
+    - {x: 0.07989584, y: 0.08585337, z: 0.059282906}
+    - {x: 0.17834209, y: 0.024270661, z: 0.031555623}
+    - {x: 0.18720673, y: 0.02725612, z: 0.010328931}
+    - {x: 0.17463851, y: 0.029728046, z: -0.010393962}
+    - {x: 0.14768167, y: 0.029875852, z: -0.047527924}
+    onRecognized:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+          m_MethodName: DetectGrabbing
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: false
+            m_BoolArgument: 0
+          m_CallState: 2
+        - m_Target: {fileID: 0}
+          m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+          m_MethodName: isReleasing
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+  debugMode: 1
+  notRecognize:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GestureGrab, Assembly-CSharp
+        m_MethodName: DetectGrabbing
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: false
+          m_BoolArgument: 0
+        m_CallState: 2
